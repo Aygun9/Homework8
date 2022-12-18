@@ -34,13 +34,13 @@ void ChangeArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int k = 0; k < array.GetLength(1) - 1; k++)
+            for (int n = 0; n < array.GetLength(1) - 1; n++)
             {
-                if (array[i, k] < array[i, k + 1])
+                if (array[i, n] < array[i, n + 1])
                 {
-                    int temp = array[i, k + 1];
-                    array[i, k + 1] = array[i, k];
-                    array[i, k] = temp;
+                    int temp = array[i, n + 1];
+                    array[i, n + 1] = array[i, n];
+                    array[i, n] = temp;
                 }
             }
         }

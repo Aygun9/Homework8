@@ -29,7 +29,7 @@ void PrintArr(int[,] array)
 
 
 
-int[,] matrix = CreateRandomArray(4, 4, 1, 10);
+int[,] matrix = CreateRandomArray(5, 4, 1, 10);
 PrintArr(matrix);
 Console.WriteLine();
 int SumRowElements(int[,] matrix, int i)
